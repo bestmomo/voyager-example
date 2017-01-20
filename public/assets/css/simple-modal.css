@@ -1,0 +1,319 @@
+.simple-modal,
+.simple-modal p,
+.simple-modal h1,
+.simple-modal h2,
+.simple-modal h3,
+.simple-modal h4,
+.simple-modal h5,
+.simple-modal h6,
+.simple-modal label,
+.simple-modal input
+{
+  color: #fff;
+}
+
+.simple-modal input
+{
+  background-color: #555;
+  padding: 8px 16px;
+  border: 1px solid #aaa;
+}
+
+.simple-modal input:focus
+{
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.simple-modal a
+{
+  color: #eee;
+}
+
+.simple-modal-background
+{
+  background-color: #eee;
+  opacity: 0.4;
+}
+
+.simple-modal
+{
+  background-color: #666;
+  opacity: 1;
+  box-shadow: 5px 5px 10px #aaa;
+}
+
+.simple-modal .simple-modal-body::-webkit-scrollbar-track
+{
+  background-color: #fff;
+}
+
+.simple-modal .simple-modal-body::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #fff;
+}
+
+.simple-modal .simple-modal-body::-webkit-scrollbar-thumb
+{
+  background-color: #555;
+  border: 1px solid #555;
+}
+
+.simple-modal .simple-modal-buttons button
+{
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.simple-modal .simple-modal-buttons button:hover
+{
+  background-color: #fff;
+  color: #666;
+}
+
+.simple-modal .simple-modal-body
+{
+  transition-property: height, width, max-width, max-height;
+  transition-duration: 400ms;
+}
+
+.simple-modal-background
+{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.simple-modal
+{
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  padding: 25px 25px 70px 25px;
+  margin: 0 auto;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.simple-modal-close:before
+{
+  content: 'X';
+}
+
+.simple-modal-close
+{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  cursor: hand;
+  opacity: 0.4;
+}
+
+.simple-modal-close:hover
+{
+  opacity: 1;
+}
+
+.simple-modal-body,
+.simple-modal-title,
+.simple-modal-buttons
+{
+  padding: 0 5px;
+}
+
+.simple-modal-no-title .simple-modal-body
+{
+  margin-top: 15px;
+}
+
+.simple-modal-title
+{
+  margin: 5px 0;
+  font-weight: 800;
+}
+
+.simple-modal-body
+{
+  overflow-y: auto;
+}
+
+.simple-modal-buttons
+{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 80%;
+  text-align: right;
+}
+
+.simple-modal-buttons button
+{
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  cursor: hand;
+  min-width: 80px;
+  transition-property: background-color, color, border;
+  transition-duration: 150ms;
+}
+
+.simple-modal-buttons button:last-of-type
+{
+  margin-right: 0;
+}
+
+.simple-modal.extra-small
+{
+  max-width: 200px;
+}
+
+.simple-modal.extra-small .simple-modal-body
+{
+  max-height: 110px;
+}
+
+.simple-modal.small
+{
+  max-width: 500px;
+}
+
+.simple-modal.small .simple-modal-body
+{
+  max-height: 220px;
+}
+
+.simple-modal.medium
+{
+  max-width: 800px;
+}
+
+.simple-modal.medium .simple-modal-body
+{
+  max-height: 350px;
+}
+
+.simple-modal.large
+{
+  max-width: 1100px;
+}
+
+.simple-modal.large .simple-modal-body
+{
+  max-height: 500px;
+}
+
+.simple-modal.extra-large
+{
+  max-width: 1400px;
+}
+
+.simple-modal.extra-large .simple-modal-body
+{
+  max-height: 650px;
+}
+
+.simple-modal-no-buttons
+{
+  padding-bottom: 25px;
+}
+
+.simple-modal-disable-scroll
+{
+  overflow: hidden;
+}
+
+.simple-modal-hide
+{
+  display: none;
+}
+
+/**
+ *  Responsive to height and width for each size of modal
+ *
+ */
+@media screen and (max-height: 800px) {
+  .simple-modal.extra-large .simple-modal-body
+  {
+    max-height: 500px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .simple-modal.extra-large .simple-modal-body
+  {
+    max-height: 350px;
+  }
+
+  .simple-modal.large .simple-modal-body
+  {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .simple-modal.extra-large .simple-modal-body
+  {
+    max-height: 220px;
+  }
+
+  .simple-modal.large .simple-modal-body
+  {
+    max-height: 220px;
+  }
+
+  .simple-modal.medium .simple-modal-body
+  {
+    max-height: 220px;
+  }
+}
+
+@media screen and (max-height: 380px) {
+  .simple-modal.extra-large .simple-modal-body
+  {
+    max-height: 120px;
+  }
+
+  .simple-modal.large .simple-modal-body
+  {
+    max-height: 120px;
+  }
+
+  .simple-modal.medium .simple-modal-body
+  {
+    max-height: 120px;
+  }
+
+  .simple-modal.small .simple-modal-body
+  {
+    max-height: 120px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .simple-modal
+  {
+    width: 80%;
+  }
+
+  .simple-modal-buttons
+  {
+    width: 86%;
+  }
+
+  .simple-modal-buttons button
+  {
+    min-width: 60px;
+    margin-right: 5px;
+  }
+}
