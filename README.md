@@ -21,3 +21,8 @@ A simple test application for [Voyager package](https://github.com/the-control-g
 
 It's done !
 
+A user has been created for you with the following login credentials:
+* email: admin@admin.com
+* password: password
+
+
